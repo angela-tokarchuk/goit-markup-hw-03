@@ -1,0 +1,381 @@
+/* Палитра */
+
+/* Первичный цвет текста  - SLATE: #434455; */
+/* Вторичный цвет заголовков -  NAVY BLUE: #2E2F42; */
+/* Белый цвет - WHITE: #FFFFFF; */
+/* Акцент - OCEAN: #404BBF;
+/* Цвет кнопки -#4D5AE5; */
+/* Второй цвет текста - CLOUD: #F4F4FD; */
+
+/* Переменные */
+
+:root {
+  --primary-text-color: #434455;
+  --first-title-color: #2e2f42;
+  --second-logo-color: #2e2f42;
+  --white-color: #ffffff;
+  --accent-color: #404bbf;
+  --hero-button-color: #4d5ae5;
+  --first-logo-color: #4d5ae5;
+  --second-text-color: #f4f4fd;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/*Скидывание дефолтных стилей*/
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+/*Контейнер*/
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Секция Header  */
+
+/* Логотип */
+
+.header-logo {
+  color: var(--first-logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.header-nav .second-logo {
+  color: var(--second-logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Навигация */
+
+.nav-header-link {
+  color: var(--first-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-link :hover {
+  color: var(--accent-color);
+}
+.header-link :focus {
+  color: var(--accent-color);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.navigation {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.address-nav :hover {
+  color: var(--accent-color);
+}
+
+.address-nav :focus {
+  color: var(--accent-color);
+}
+
+/*Секция Header*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  display: flex;
+  column-gap: 40px;
+}
+
+.address-nav {
+  display: flex;
+  column-gap: 40px;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Секция "Герой" */
+
+.hero-section {
+  background-color: var(--second-logo-color);
+  padding-top: 60px;
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--hero-button-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: var(--accent-color);
+}
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+
+.hero-container {
+  padding-top: 188px;
+  padding-right: 472px;
+  padding-bottom: 188px;
+  padding-left: 472px;
+  margin-bottom: 48px;
+}
+
+/* Секция 2 */
+
+.mission-section {
+  background-color: var(--white-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.mission-third-title {
+  color: var(--first-title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.mission-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.mission-second-list {
+  width: calc((100% - 72px / 4));
+}
+
+.mission-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Cекция 3 */
+
+.team-section {
+  background-color: var(--second-text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-pfoto {
+  background-color: var(--white-color);
+  width: calc((100% - 72px / 4));
+}
+
+.team-title {
+  color: var(--first-title-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-third-title {
+  color: var(--first-title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team-title {
+  margin-bottom: 68.06px;
+}
+
+/* Секция 4 */
+
+.portfolio-section {
+  background-color: var(--white-color);
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.portfolio-title {
+  color: var(--first-title-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-thirt-title {
+  color: var(--first-title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-fourth-list {
+  width: calc((100% - 48px / 3));
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: var(--first-title-color);
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+}
+
+.footer-section .text {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.second-logo {
+  color: var(--second-text-color);
+}
+
+/* Кнопки */
+
+.button {
+  color: var(--hero-button-color);
+  background-color: var(--second-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.hero-button {
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 7px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button:is(:hover, :focus) {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
