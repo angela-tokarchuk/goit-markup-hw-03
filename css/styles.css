@@ -208,6 +208,18 @@ img {
   padding-bottom: 120px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .mission-third-title {
   color: var(--first-title-color);
@@ -257,7 +269,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 72px; 
+  margin-bottom: 72px;
 }
 
 .team-third-title {
@@ -269,7 +281,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 8px;
-  margin-bottom: 72px;
 }
 
 .team-list {
@@ -292,7 +303,7 @@ img {
 }
 
 .team-title {
-  margin-bottom: 68.06px;
+  margin-bottom: 72px;
 }
 
 .container-worker {
@@ -332,11 +343,10 @@ img {
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 48px 24px;
 }
 
 .portfolio-fourth-list {
-  width: calc((100% - 48px / 3));
+  width: calc((100% - 48px) / 3);
 }
 
 .container-worker {
@@ -350,10 +360,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.team-pfoto {
-  width: calc((100% - 48px) / 3);
 }
 
 /* Footer */
