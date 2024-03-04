@@ -336,8 +336,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-top: 32px;
-  padding-left: 16px;
 }
 
 .portfolio-list {
@@ -362,7 +360,10 @@ img {
 }
 
 .container-portfolio {
+  border-top: none;
   border: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 /* Footer */
 
