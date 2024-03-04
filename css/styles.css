@@ -269,6 +269,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -338,6 +339,12 @@ img {
   width: calc((100% - 48px / 3));
 }
 
+.container-worker {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  border: 1px solid #e7e9fc;
+}
+
 .portfolio-text {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -345,10 +352,8 @@ img {
   letter-spacing: 0.02em;
 }
 
-.container-portfolio {
-  padding: 32px 16px
-  border: 1px solid #e7e9fc;
-  border-top: none;
+.team-pfoto {
+  width: calc((100% - 48px) / 3);
 }
 
 /* Footer */
